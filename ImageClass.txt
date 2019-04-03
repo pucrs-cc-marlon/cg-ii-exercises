@@ -1,0 +1,1 @@
+./Release/ExemploDeManipulacaoDeImagens-PRONTA.cpp.o ./Release/ImageClass.cpp.o ./Release/SOIL_image_DXT.cpp.o ./Release/SOIL_image_helper.cpp.o ./Release/SOIL_SOIL.cpp.o ./Release/SOIL_stb_image_aug.cpp.o
