@@ -213,14 +213,22 @@ cout << "Iniciou Mediana..." << endl;
     int r;
     int g;
     int b;
-    for(x=0; x<Image.SizeX(); x++)
+    int i;
+    int edgex = (Image.SizeX() / 2);
+    int edgey = (Image.SizeY() / 2);
+    for(x=edgex; x<Image.SizeX()-edgex; x++)
     {
-        for(y=0; y<Image.SizeY(); y++)
+        for(y=edgey; y<Image.SizeY()-edgey; y++)
         {
-            r = 255 - Image.ReadR(x,y);
-            g = 255 - Image.ReadG(x,y);
-            b = 255 - Image.ReadB(x,y);
-            NewImage.DrawPixel(x, y, r,g,b);  // exibe um ponto CINZA na imagem da direita
+            i = 0;
+            for(fx=0; fx<Image.SizeX(); fx++)
+            {
+                for(fy=0; fy<Image.SizeY(); fy++)
+                {
+                    NewImage.DrawPixel(x, y, r,g,b);
+                }
+            }
+              // exibe um ponto CINZA na imagem da direita
         }
     }
 
